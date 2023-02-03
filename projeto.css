@@ -44,11 +44,8 @@ body {
 }
 
 input {
-    height: 30px;
-}
-
-label {
-    font-size: 25px;
+    height: 35px;
+    width: 250px;
 }
 
 #Carta {
@@ -66,14 +63,6 @@ label {
     margin-bottom: 30px;
     color: rgb(48, 2, 90);
 
-}
-
-input {
-    height: 30px;
-}
-
-label {
-    font-size: 25px;
 }
 
 img {

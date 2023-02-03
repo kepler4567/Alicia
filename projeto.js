@@ -27,7 +27,7 @@ function BuscarMotivo() {
 
 
     if (numMotivos < 0 || numMotivos > 99 || numMotivos == "") {
-        Motivos.innerHTML = "Escolha um número de 0 a 99"
+        Motivos.innerHTML = "Escolha um número de 1 a 100"
         return
     }
 
@@ -127,7 +127,7 @@ function BuscarMotivo() {
 
     ]
 
-    Motivos.innerHTML = MotivosParaTeAmar[numMotivos - 1]
+    Motivos.innerHTML = MotivosParaTeAmar[numMotivos]
 
 }
 
