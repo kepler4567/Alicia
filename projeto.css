@@ -1,0 +1,81 @@
+#Titulo {
+
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: rgb(48, 2, 90);
+
+}
+
+.Botao {
+
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font: bold 15px arial, sans-serif;
+    text-shadow: none;
+    border-radius: 10px;
+}
+
+body {
+
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url('assets/imagemDeFundo4.jpg');
+    text-align: center;
+
+}
+
+#Motivos {
+
+    text-align: center;
+    font-size: 70px;
+    margin-top: 10%;
+    color: rgb(86, 64, 247);
+    -webkit-text-stroke-width: 3px;
+    /* largura da borda */
+    -webkit-text-stroke-color: rgb(41, 11, 70);
+    /* cor da borda */
+}
+
+input {
+    height: 30px;
+}
+
+label {
+    font-size: 25px;
+}
+
+#Carta {
+
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#Titulo {
+
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: rgb(48, 2, 90);
+
+}
+
+input {
+    height: 30px;
+}
+
+label {
+    font-size: 25px;
+}
+
+img {
+    height: 500px;
+}
