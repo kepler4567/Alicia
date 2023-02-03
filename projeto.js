@@ -1,27 +1,32 @@
 function TrocarIMG() {
-    document.getElementById('Falha').style.display = 'none'
-    var valor = document.getElementById("Foto").value
-    if (valor <= 0 || valor >= 78) {
+    var falhaCarregarFoto = document.getElementById('Falha')
+    falhaCarregarFoto.style.display = 'none'
+    var numfoto = document.getElementById('numFoto').value
+    var foto =  document.getElementById('Foto')
 
-        document.getElementById('Falha').innerHTML = "Digite um valor entre 1 e 77 "
-        document.getElementById('Falha').style.display = 'block'
+    if (numfoto <= 0 || numfoto >= 78) {
+
+        falhaCarregarFoto.innerHTML = "Digite um valor entre 1 e 77 "
+        falhaCarregarFoto.style.display = 'block'
+        foto.style.display = "none"
     }
-    var Caminho = `./assets/fotos/Foto (${valor}).jpg`
-    document.getElementById('URL').setAttribute('src', Caminho)
+    else {
+        var Caminho = `./assets/fotos/Foto (${numfoto}).jpg`
+        foto.setAttribute('src', Caminho)
+        foto.style.display = "inline"
+    }
 
 }
 
-document.getElementById('Carta').style.display = "none"
-
 function BuscarMotivo() {
 
-    var input = document.getElementById("motivo").value
+    var numMotivos = document.getElementById("numMotivo").value
     var Motivos = document.getElementById('Motivos')
     Motivos.style.display = "Block"
     document.getElementById('Carta').style.display = 'none'
 
 
-    if (input < 0 || input > 99 || input == "") {
+    if (numMotivos < 0 || numMotivos > 99 || numMotivos == "") {
         Motivos.innerHTML = "Escolha um número de 0 a 99"
         return
     }
@@ -44,7 +49,7 @@ function BuscarMotivo() {
         "Te amo pois você me completa",
         "Te amo por que vamos superar tudo juntos",
         "Te amo por que independente do problema você vai estar do meu lado",
-        "Você me alegra",
+        "Te amo porque você me alegra",
         "Te amo por que combinamos",
         "Amo seu sorriso",
         "Te amo por que você me completa",
@@ -66,7 +71,6 @@ function BuscarMotivo() {
         "Te amo por que você me faz bem",
         "Te amo por que você me suporta",
         "Amo suas gracinhas",
-        "Te amo por que você me deixa doido",
         "Você me faz sonhar",
         "Amo sua cara de bunda",
         "Te amo por que você é carinhosa",
@@ -106,15 +110,11 @@ function BuscarMotivo() {
         "Te amo por que fazemos tudo juntos",
         "Te amo por que você especial para mim",
         "Te amo por que você me trás segurança",
-        "Te amo por que evoluimos juntos",
+        "Te amo por que vamos evoluimos juntos",
         "Amo a forma em que você olha para mim",
-        "Te amo por que você confia em mim",
-        "Te amo por que você ajuda as pessoas",
-        "Te amo por que você gosta de andar de bike comigo",
-        "Te amo por que você é mágica",
         "Amo te ver de pijama",
         "Te amo por que servimos a Deus juntos",
-        "Te amo pois você vai na igreja comigo",
+        "Te amo pois estamos na mesma comunhão",
         "Amo nossos poucos momentos juntos",
         "Amo o seu carinho",
         "Te amo por que não escondemos nada um do outro",
@@ -127,7 +127,7 @@ function BuscarMotivo() {
 
     ]
 
-    Motivos.innerHTML = MotivosParaTeAmar[input - 1]
+    Motivos.innerHTML = MotivosParaTeAmar[numMotivos - 1]
 
 }
 
