@@ -1,12 +1,12 @@
 function TrocarIMG() {
     document.getElementById('Falha').style.display = 'none'
     var valor = document.getElementById("Foto").value
-    if (valor <= 0 || valor >= 60) {
+    if (valor <= 0 || valor >= 78) {
 
-        document.getElementById('Falha').innerHTML = "Digite um valor entre 1 e 59 "
+        document.getElementById('Falha').innerHTML = "Digite um valor entre 1 e 77 "
         document.getElementById('Falha').style.display = 'block'
     }
-    var Caminho = `./assets/fotos/Foto${valor}.jpg`
+    var Caminho = `./assets/fotos/Foto (${valor}).jpg`
     document.getElementById('URL').setAttribute('src', Caminho)
 
 }
@@ -25,7 +25,6 @@ function BuscarMotivo() {
         Motivos.innerHTML = "Escolha um número de 0 a 99"
         return
     }
-    console.log(input)
 
     var MotivosParaTeAmar = [
         "Te amo por que você me faz rir",
@@ -116,13 +115,12 @@ function BuscarMotivo() {
         "Amo te ver de pijama",
         "Te amo por que servimos a Deus juntos",
         "Te amo pois você vai na igreja comigo",
-        "Amo nossos momentos juntos",
+        "Amo nossos poucos momentos juntos",
         "Amo o seu carinho",
         "Te amo por que não escondemos nada um do outro",
-        "Amo como você me trata(As vezes)",
-        "Te amo por que você me faz chorar",
+        "Amo seu jeito",
         "Amo seu toque",
-        "Te amo por que você me recarrega",
+        "Te amo por que você tirou toda minha tristeza",
         "Amo seu abraço",
         "Te amo por que você confia em mim",
         "Você é o amor da minha vida",
@@ -138,6 +136,4 @@ function LerCarta() {
     var carta = document.getElementById('Carta')
     carta.style.display = "block"
     document.getElementById('Motivos').style.display = "none"
-
-
 }
