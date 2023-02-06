@@ -11,7 +11,7 @@ function TrocarIMG() {
         foto.style.display = "none"
     }
     else {
-        var Caminho = `./assets/fotos/Foto (${numfoto}).jpg`
+        var Caminho = `./assets/fotos/foto (${numfoto}).jpg`
         foto.setAttribute('src', Caminho)
         foto.style.display = "inline"
     }
