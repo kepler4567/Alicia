@@ -21,7 +21,7 @@ function TrocarIMG() {
 function verificarSenha() {
     var senha = document.getElementById("senha").value
 
-    if(senha == "teste") {
+    if(senha == "alicia123") {
         document.getElementById('entrar').style.display = 'inline'
     }
     else {
