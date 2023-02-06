@@ -20,12 +20,19 @@ function TrocarIMG() {
 
 function verificarSenha() {
     var senha = document.getElementById("senha").value
+    var buttonEntrar = document.getElementById('entrar');
+    var buttonVerificarSenha = document.getElementById('verificar')
+    var labelEsqueciMinhaSenha = document.getElementById('esqueciSenha')
 
     if(senha == "alicia123") {
-        document.getElementById('entrar').style.display = 'inline'
+        buttonEntrar.style.display = 'inline'
+        buttonVerificarSenha.style.display = 'none'
+        labelEsqueciMinhaSenha.style.display = 'none'
     }
     else {
-        document.getElementById('entrar').style.display = 'none'
+        buttonEntrar.style.display = 'none'
+        buttonVerificarSenha.style.display = 'inline'
+        labelEsqueciMinhaSenha.style.display = 'inline'
     }
 }
 
@@ -37,7 +44,7 @@ function BuscarMotivo() {
     document.getElementById('Carta').style.display = 'none'
 
 
-    if (numMotivos < 0 || numMotivos > 99 || numMotivos == "") {
+    if (numMotivos < 1 || numMotivos > 100 || numMotivos == "") {
         Motivos.innerHTML = "Escolha um número de 1 a 100"
         return
     }
@@ -81,6 +88,7 @@ function BuscarMotivo() {
         "Te amo por que você me faz bem",
         "Te amo por que você me suporta",
         "Amo suas gracinhas",
+        "Amo seu jeito",
         "Te amo por que você me suporta mesmo eu te irritando toda hora",
         "Amo seu nariz",
         "Te amo por que você é carinhosa",

@@ -16,8 +16,9 @@
 
     <h1 id="Titulo"> 100 motivos para te amar</h1>
     <div style="padding-top: 80px;">
+        <label for="senha" id="esqueciSenha" style="color: red;">Senha incorreta</label>
         <input type="password" placeholder="Digite a senha" id="senha">
-        <button class="Botao" type="submit" onclick="verificarSenha()">Verificar</button>
+        <button class="Botao" type="submit" onclick="verificarSenha()" id="verificar">Verificar</button>
         <button class="Botao" type="submit" id="entrar"> <a href="alicia.html"> Entrar</a></button>
     </div>
 
@@ -25,6 +26,7 @@
 
 <script>
     document.getElementById('entrar').style.display = 'none'
+    document.getElementById('esqueciSenha').style.display = 'none'
 </script>
 
 </html>
