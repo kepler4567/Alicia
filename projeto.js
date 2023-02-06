@@ -22,7 +22,7 @@ function verificarSenha() {
     var senha = document.getElementById("senha").value
 
     if(senha == "teste") {
-        document.getElementById('entrar').style.display = 'Block'
+        document.getElementById('entrar').style.display = 'inline'
     }
     else {
         document.getElementById('entrar').style.display = 'none'
