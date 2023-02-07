@@ -24,7 +24,7 @@ function verificarSenha() {
     var buttonVerificarSenha = document.getElementById('verificar')
     var labelEsqueciMinhaSenha = document.getElementById('esqueciSenha')
 
-    if(senha == "alicia123") {
+    if(senha == "311222") {
         buttonEntrar.style.display = 'inline'
         buttonVerificarSenha.style.display = 'none'
         labelEsqueciMinhaSenha.style.display = 'none'
